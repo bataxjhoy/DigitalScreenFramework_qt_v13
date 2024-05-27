@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+ <widget class="QMainWindow" name="LoginWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1008</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LoginWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(180, 180, 180);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="labelCamera">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>521</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: gainsboro;
+border-image: url(:/new/prefix1/image/login_image.jpg);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>30</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 28pt &quot;Arial&quot;;
+color: rgb(0, 0, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255,255,  255), stop:1 rgba( 0, 255,255, 255));
+border-radius:7px; </string>
+    </property>
+    <property name="text">
+     <string>智慧场景学习平台</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>80</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 12pt &quot;Bahnschrift Light&quot;;
+color: rgb(0, 85, 255);
+background-color: rgba(255, 255, 255,0);</string>
+    </property>
+    <property name="text">
+     <string>专注智慧教育平台</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LoginBtn">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>360</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+    border: 1px solid #555;
+	background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.54, y2:0, 
+stop:0.0112994 rgba(14, 145, 252, 255), 
+stop:1 rgba(255, 255, 255, 255));
+	color: rgb(255, 255, 255);
+ 
+	border:0px groove gray;
+	border-radius:7px;
+	padding:2px 4px;
+	font: 16pt &quot;Arial&quot;;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 170, 0);
+}
+
+QPushButton:pressed {
+    background-color: #333;
+    border-color: #555;
+    color: #AAA;
+}
+
+QPushButton:disabled {
+   color: #333333;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>登录</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SignupBtn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>420</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+    border: 1px solid #555;
+	background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.54, y2:0, 
+stop:0.0112994 rgba(14, 145, 252, 255), 
+stop:1 rgba(255, 255, 255, 255));
+	color: rgb(255, 255, 255);
+ 
+	border:0px groove gray;border-radius:
+7px;padding:2px 4px;
+	font: 16pt &quot;Arial&quot;;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 170, 0);
+}
+
+QPushButton:pressed {
+    background-color: #333;
+    border-color: #555;
+    color: #AAA;
+}
+
+QPushButton:disabled {
+   color: #333333;
+}</string>
+    </property>
+    <property name="text">
+     <string>注册</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_close">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>20</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+background-color: rgba(0, 0, 0,0);
+color: rgb(0, 0, 0);
+	font: 16pt &quot;Arial&quot;;
+border-radius:7px; 
+
+}
+
+QPushButton:hover {
+    background-color: rgb(190, 30, 0);
+}
+
+QPushButton:pressed {
+    background-color: #333;
+    border-color: #555;
+    color: #AAA;
+}
+
+QPushButton:disabled {
+   color: #333333;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textEditUserName">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>120</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>谢金辉</string>
+    </property>
+    <property name="placeholderText">
+     <string>userName</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textEditPassWord">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>190</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>123456</string>
+    </property>
+    <property name="placeholderText">
+     <string>passWord</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelTip">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>270</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0);
+border-radius:7px; </string>
+    </property>
+    <property name="text">
+     <string>提示：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1011</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(245, 245,245,  255), stop:1 rgba( 0, 255,255, 255));</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>labelCamera</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>LoginBtn</zorder>
+   <zorder>SignupBtn</zorder>
+   <zorder>btn_close</zorder>
+   <zorder>textEditUserName</zorder>
+   <zorder>textEditPassWord</zorder>
+   <zorder>labelTip</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

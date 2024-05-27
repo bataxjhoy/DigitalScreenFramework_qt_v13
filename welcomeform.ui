@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>welcomeForm</class>
+ <widget class="QWidget" name="welcomeForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>910</width>
+    <height>502</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="enterBtn">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>399</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+    border: 1px solid #555;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(0, 100, 255, 255));
+	color: rgb(255, 255, 255); 
+	border:0px groove gray;border-radius:
+7px;padding:2px 4px;
+	font: 16pt &quot;Arial&quot;;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 170, 0);
+}
+
+QPushButton:pressed {
+    background-color: #333;
+    border-color: #555;
+    color: #AAA;
+}
+
+QPushButton:disabled {
+   color: #333333;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>进入</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTip">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>230</y>
+     <width>431</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>提示：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-30</x>
+     <y>-10</y>
+     <width>971</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/new/prefix1/image/welcome.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPic">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>150</y>
+     <width>201</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_close">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>40</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+QPushButton {
+background-color: rgba(0, 0, 0,0);
+color: rgb(255, 255,255);
+	font: 16pt &quot;Arial&quot;;
+border-radius:7px; 
+
+}
+
+QPushButton:hover {
+    background-color: rgb(190, 30, 0);
+}
+
+QPushButton:pressed {
+    background-color: #333;
+    border-color: #555;
+    color: #AAA;
+}
+
+QPushButton:disabled {
+   color: #333333;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelWelcome">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>80</y>
+     <width>521</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(235, 0, 0);
+font: 30pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>欢迎使用智慧场景学习平台！</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>enterBtn</zorder>
+  <zorder>labelTip</zorder>
+  <zorder>labelPic</zorder>
+  <zorder>btn_close</zorder>
+  <zorder>labelWelcome</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

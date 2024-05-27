@@ -1,0 +1,2159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainForm</class>
+ <widget class="QWidget" name="MainForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1633</width>
+    <height>959</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>智慧场景教育平台</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 91, 186);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(64, 103,120,  255), stop:1 rgba( 48,17, 60, 255));
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 103,255,  255), stop:1 rgba( 0,91, 186, 255));
+
+</string>
+  </property>
+  <widget class="QWidget" name="widgetTitle" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1621</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:7px;
+background-color: rgb(82, 91, 255);
+
+border: 2px solid white;</string>
+   </property>
+   <widget class="QLabel" name="labIco">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>61</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>61</width>
+      <height>71</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/new/prefix1/image/ai.png);
+ size: 60px;
+
+border-radius:7px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labTitle">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>331</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 290 28pt &quot;Microsoft YaHei&quot;;
+background-color: rgba(255, 255, 255,0);
+border-radius:7px;
+border:0px;</string>
+    </property>
+    <property name="text">
+     <string>  智慧场景学习平台 </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="remainTime_label">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>60</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>171</width>
+      <height>41</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: rgb(200,255, 255);
+background-color: rgba(38, 61, 139,255);
+font: 12pt &quot;Arial&quot;;
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;
+}
+QLabel:hover{
+ border-bottom:2px solid #00DB00;
+}</string>
+    </property>
+    <property name="text">
+     <string>剩余时长：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="globalUser_label">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>10</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>171</width>
+      <height>41</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: rgb(200,255, 255);
+background-color: rgba(38, 61, 139,255);
+font: 12pt &quot;Arial&quot;;
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;
+}
+QLabel:hover{
+ border-bottom:2px solid #00DB00;
+}</string>
+    </property>
+    <property name="text">
+     <string>用户名：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="loginTime_label">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>60</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>171</width>
+      <height>41</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: rgb(200,255, 255);
+background-color: rgba(38, 61, 139,255);
+font: 12pt &quot;Arial&quot;;
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;
+}
+QLabel:hover{
+ border-bottom:2px solid #00DB00;
+}</string>
+    </property>
+    <property name="text">
+     <string>登录时间：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CurTime_label">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>10</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>171</width>
+      <height>41</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color: rgb(200,255, 255);
+background-color: rgba(38, 61, 139,255);
+font: 12pt &quot;Arial&quot;;
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;
+}
+QLabel:hover{
+ border-bottom:2px solid #00DB00;
+}</string>
+    </property>
+    <property name="text">
+     <string>当前时间：</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_top" native="true">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>20</y>
+      <width>511</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <widget class="QToolButton" name="btnExit">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>0</y>
+       <width>76</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>66</width>
+       <height>71</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QToolButton{
+	font: 14pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+	border-radius:0px;
+	padding:5px;	
+	border-radius:7px;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(64, 103,120,  0), stop:1 rgba( 0, 185,185, 0));	
+border:1px solid #DCDCDC;
+
+}
+QToolButton:hover{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #999900,stop:1 #525252);
+ border-bottom:2px solid #00DB00;
+}
+QToolButton:checked{
+ border-bottom:2px solid #00DB00;
+}
+QToolButton:pressed {
+    background-color: #333;
+    border-color: #555;
+    color: #AAA;
+}
+
+QToolButton:disabled {
+   color: #333333;
+}</string>
+     </property>
+     <property name="text">
+      <string>用户退出</string>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/new/prefix1/image/main_exit.png</normaloff>:/new/prefix1/image/main_exit.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnHelp">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>0</y>
+       <width>76</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>71</width>
+       <height>71</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QToolButton{
+	font: 14pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+	border-radius:0px;
+	padding:5px;	
+	border-radius:7px;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(64, 103,120,  0), stop:1 rgba( 0, 185,185, 0));	
+border:1px solid #DCDCDC;
+
+}
+QToolButton:hover{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #999900,stop:1 #525252);
+ border-bottom:2px solid #00DB00;
+}
+QToolButton:checked{
+ border-bottom:2px solid #00DB00;
+}
+QToolButton:pressed {
+    background-color: #333;
+    border-color: #555;
+    color: #AAA;
+}
+
+QToolButton:disabled {
+   color: #333333;
+}</string>
+     </property>
+     <property name="text">
+      <string>智能辅导</string>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/new/prefix1/image/avatar.png</normaloff>:/new/prefix1/image/avatar.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnMain">
+     <property name="geometry">
+      <rect>
+       <x>23</x>
+       <y>0</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>71</width>
+       <height>71</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QToolButton{
+	font: 14pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+	border-radius:0px;
+	padding:5px;	
+	border-radius:7px;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(64, 103,120,  0), stop:1 rgba( 0, 185,185, 0));	
+border:1px solid #DCDCDC;
+
+}
+QToolButton:hover{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #999900,stop:1 #525252);
+ border-bottom:2px solid #00DB00;
+}
+QToolButton:checked{
+ border-bottom:2px solid #00DB00;
+}
+QToolButton:pressed {
+    background-color: #333;
+    border-color: #555;
+    color: #AAA;
+}
+
+QToolButton:disabled {
+   color: #333333;
+}</string>
+     </property>
+     <property name="text">
+      <string>主界面</string>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/new/prefix1/image/main_main.png</normaloff>:/new/prefix1/image/main_main.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnData">
+     <property name="geometry">
+      <rect>
+       <x>182</x>
+       <y>0</y>
+       <width>77</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>66</width>
+       <height>71</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QToolButton{
+	font: 14pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+	border-radius:0px;
+	padding:5px;	
+	border-radius:7px;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(64, 103,120,  0), stop:1 rgba( 0, 185,185, 0));	
+border:1px solid #DCDCDC;
+
+}
+QToolButton:hover{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #999900,stop:1 #525252);
+ border-bottom:2px solid #00DB00;
+}
+QToolButton:checked{
+ border-bottom:2px solid #00DB00;
+}
+QToolButton:pressed {
+    background-color: #333;
+    border-color: #555;
+    color: #AAA;
+}
+
+QToolButton:disabled {
+   color: #333333;
+}</string>
+     </property>
+     <property name="text">
+      <string>个人信息</string>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/new/prefix1/image/main_person.png</normaloff>:/new/prefix1/image/main_person.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnConfig">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>76</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>71</width>
+       <height>71</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QToolButton{
+	font: 14pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+	border-radius:0px;
+	padding:5px;	
+	border-radius:7px;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(64, 103,120,  0), stop:1 rgba( 0, 185,185, 0));	
+border:1px solid #DCDCDC;
+
+}
+QToolButton:hover{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #999900,stop:1 #525252);
+ border-bottom:2px solid #00DB00;
+}
+QToolButton:checked{
+ border-bottom:2px solid #00DB00;
+}
+QToolButton:pressed {
+    background-color: #333;
+    border-color: #555;
+    color: #AAA;
+}
+
+QToolButton:disabled {
+   color: #333333;
+}</string>
+     </property>
+     <property name="text">
+      <string>系统设置</string>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/new/prefix1/image/main_config.png</normaloff>:/new/prefix1/image/main_config.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnLogin">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>0</y>
+       <width>77</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>71</width>
+       <height>71</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QToolButton{
+	font: 14pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+	border-radius:0px;
+	padding:5px;	
+	border-radius:7px;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(64, 103,120,  0), stop:1 rgba( 0, 185,185, 0));	
+border:1px solid #DCDCDC;
+
+}
+QToolButton:hover{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #999900,stop:1 #525252);
+ border-bottom:2px solid #00DB00;
+}
+QToolButton:checked{
+ border-bottom:2px solid #00DB00;
+}
+QToolButton:pressed {
+    background-color: #333;
+    border-color: #555;
+    color: #AAA;
+}
+
+QToolButton:disabled {
+   color: #333333;
+}</string>
+     </property>
+     <property name="text">
+      <string>账号登录</string>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/new/prefix1/image/Button_deng.png</normaloff>:/new/prefix1/image/Button_deng.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnMenu_Max">
+    <property name="geometry">
+     <rect>
+      <x>1534</x>
+      <y>31</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>最大化</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+border-radius:3px;
+color: rgb(255, 255,255);
+padding:3px;
+margin:0px;
+background:rgb(255, 85,0);
+border-style:none;
+}
+
+QPushButton:hover{
+color:#FFFFFF;
+margin:1px 1px 2px 1px;
+background-color:rgba(255,0,0,230);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMenu_Close">
+    <property name="geometry">
+     <rect>
+      <x>1570</x>
+      <y>31</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>关闭</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+border-radius:3px;
+color: rgb(255, 255,255);
+padding:3px;
+margin:0px;
+background:rgb(255, 85,0);
+border-style:none;
+}
+
+QPushButton:hover{
+color:#FFFFFF;
+margin:1px 1px 2px 1px;
+background-color:rgba(255,0,0,230);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMenu_Min">
+    <property name="geometry">
+     <rect>
+      <x>1498</x>
+      <y>31</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>最小化</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+border-radius:3px;
+color: rgb(255, 255,255);
+padding:3px;
+margin:0px;
+background:rgb(255, 85,0);
+border-style:none;
+}
+
+QPushButton:hover{
+color:#FFFFFF;
+margin:1px 1px 2px 1px;
+background-color:rgba(255,0,0,230);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>1621</width>
+     <height>811</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QStackedWidget {
+border:1px solid #ffffff;
+border-radius:1px;
+}</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="main_page">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>191</width>
+       <height>781</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255,0);
+border-right:1px solid #00ff99;</string>
+     </property>
+     <widget class="QProgressBar" name="progressBarGroup">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>400</y>
+        <width>151</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>151</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QProgressBar{
+min-height:10px;
+background-color: rgb(115, 115, 115);
+font: 87 12pt &quot;Arial Black&quot;;
+text-align:center;
+border-radius:5px;
+border:1px solid #484848;
+}
+
+QProgressBar:chunk{
+border-radius:5px;
+font: 87 12pt &quot;Arial Black&quot;;
+text-align:center;
+background-color:#00f000;
+}
+</string>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelTaskProcess">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>360</y>
+        <width>112</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 290 14pt &quot;Microsoft YaHei&quot;;
+color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+      </property>
+      <property name="text">
+       <string>学习进度：</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comBoxLoginMem">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>151</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>151</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox{
+color: rgb(0, 0, 255);
+font: 87 16pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+}
+
+QComboBox:hover{
+background-color: rgb(0, 255, 0);
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLearnTsak">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>242</y>
+        <width>141</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 290 14pt &quot;Microsoft YaHei&quot;;
+color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+      </property>
+      <property name="text">
+       <string>当前学习目标：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelOnLine">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>34</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 290 14pt &quot;Microsoft YaHei&quot;;
+background-color: rgba(255, 255, 255,0);
+color: rgb(255, 255, 255);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+      </property>
+      <property name="text">
+       <string>在线人员</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelTaskCurrent">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>151</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 290 16pt &quot;Microsoft YaHei&quot;;
+color: rgb(255, 255, 255);
+background-color: rgba(0, 205, 0,255);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLearnTsak_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>112</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 290 14pt &quot;Microsoft YaHei&quot;;
+color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+      </property>
+      <property name="text">
+       <string>任务总览:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comBoxTaskAll">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>151</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>151</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox{
+color: rgb(0, 0, 255);
+font: 87 16pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+}
+
+QComboBox:hover{
+background-color: rgb(0, 255, 0);
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QChartView" name="chartViewLearnProcess">
+     <property name="geometry">
+      <rect>
+       <x>1250</x>
+       <y>120</y>
+       <width>341</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid #776688;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>1250</x>
+       <y>40</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 16pt &quot;Microsoft YaHei&quot;;
+background-color: rgb(71, 60, 139);
+color: rgb(255, 255, 255);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+     </property>
+     <property name="text">
+      <string>团队学习进度</string>
+     </property>
+    </widget>
+    <widget class="QChartView" name="chartViewLearnTimeBar">
+     <property name="geometry">
+      <rect>
+       <x>1260</x>
+       <y>530</y>
+       <width>331</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid #776688;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>1260</x>
+       <y>450</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 16pt &quot;Microsoft YaHei&quot;;
+background-color: rgb(71, 60, 139);
+color: rgb(255, 255, 255);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+     </property>
+     <property name="text">
+      <string>团队学习时长</string>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>440</y>
+       <width>451</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabWidget QWidget{
+	border:1px solid #ffffff;
+
+	border-radius:1px;
+	font: 12pt &quot;Arial&quot;;
+	background-color:rgb(155, 155, 155); 
+     	
+}  
+  
+QTabBar::tab:selected {  
+    background-color:rgb(0, 155, 0); /* 设置选中 tab 的背景色 */ 
+}  
+  
+QTabBar::tab:hover {  
+    background-color:rgb(0, 255, 0); /* 设置鼠标悬停时的 tab 背景色 */  
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>运动轨迹</string>
+      </attribute>
+      <widget class="QLabel" name="labelTrj">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>401</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 290 12pt &quot;Microsoft YaHei&quot;;
+border-radius:3px;
+border:0px solid #776688;
+background-color: rgba(255, 255, 255,0);
+
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>限位信号</string>
+      </attribute>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>111</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Arial&quot;;
+background-color: rgba(255, 255, 255,0);</string>
+       </property>
+       <property name="text">
+        <string>1号电机</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>170</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Arial&quot;;
+background-color: rgba(255, 255, 255,0);</string>
+       </property>
+       <property name="text">
+        <string>2号电机</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="m1p_led">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>110</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/new/prefix1/image/grayLed.png);
+background-color: rgba(255, 255, 255,0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="m2z_led">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>170</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/new/prefix1/image/grayLed.png);
+background-color: rgba(255, 255, 255,0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="m1z_led">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>110</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/new/prefix1/image/grayLed.png);
+background-color: rgba(255, 255, 255,0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="m1n_led">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>110</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/new/prefix1/image/grayLed.png);
+background-color: rgba(255, 255, 255,0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="m2p_led">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>170</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/new/prefix1/image/grayLed.png);
+background-color: rgba(255, 255, 255,0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="m2n_led">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>170</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/new/prefix1/image/grayLed.png);
+background-color: rgba(255, 255, 255,0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>140</y>
+         <width>41</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 255, 0);
+font: 8pt &quot;Arial&quot;;
+background-color: rgba(255, 255, 255,0);
+border:0px solid #776688;</string>
+       </property>
+       <property name="text">
+        <string>正限位</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>140</y>
+         <width>41</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 255, 0);
+font: 8pt &quot;Arial&quot;;
+background-color: rgba(255, 255, 255,0);
+border:0px solid #776688;</string>
+       </property>
+       <property name="text">
+        <string>零限位</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>140</y>
+         <width>41</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 255, 0);
+font: 8pt &quot;Arial&quot;;
+background-color: rgba(255, 255, 255,0);
+border:0px solid #776688;</string>
+       </property>
+       <property name="text">
+        <string>负限位</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="TrajLabel">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>20</y>
+       <width>451</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 48pt &quot;Microsoft YaHei&quot;;
+border-radius:3px;
+border:1px solid #776688;
+</string>
+     </property>
+     <property name="text">
+      <string>显示场景</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelMvFs">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>350</y>
+       <width>491</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Arial&quot;;
+background-color: rgba(255, 255, 255,0);</string>
+     </property>
+     <property name="text">
+      <string> 帧率：</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnSubmitTask">
+     <property name="geometry">
+      <rect>
+       <x>970</x>
+       <y>660</y>
+       <width>134</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QToolButton{
+	color: rgb(0, 0, 255);
+	font: 290 20pt &quot;Microsoft YaHei&quot;;
+	border-radius:7px;
+	padding:5px;	
+	border:1px solid #484848;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(245, 245,245,  255), stop:1 rgba( 55,200,55, 255));
+}
+QToolButton:hover{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #646464,stop:1 #005200);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>提交任务</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnStartWork">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>660</y>
+       <width>134</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+
+QToolButton{
+	color: rgb(0, 0, 255);
+	font: 290 20pt &quot;Microsoft YaHei&quot;;
+	border-radius:7px;
+	padding:5px;	
+	border:1px solid #484848;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(245, 245,245,  255), stop:1 rgba( 55,200,55, 255));
+}
+QToolButton:hover{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #646464,stop:1 #005200);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>开始任务</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="FaceLabel">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>20</y>
+       <width>461</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 48pt &quot;Microsoft YaHei&quot;;
+border-radius:3px;
+border:1px solid #776688;
+</string>
+     </property>
+     <property name="text">
+      <string>显示人脸</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelUsbFs">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>350</y>
+       <width>491</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Arial&quot;;
+background-color: rgba(255, 255, 255,0);</string>
+     </property>
+     <property name="text">
+      <string> 帧率：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelResult">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>580</y>
+       <width>501</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Arial&quot;;
+background-color: rgba(255, 255, 255,0);</string>
+     </property>
+     <property name="text">
+      <string>实验结果：</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="config_page">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 24pt &quot;Microsoft YaHei&quot;;
+background-color: rgb(71, 60, 139);
+color: rgb(255, 255, 255);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+     </property>
+     <property name="text">
+      <string>系统设置</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>170</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei</family>
+       <pointsize>14</pointsize>
+       <weight>36</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 14pt &quot;Microsoft YaHei&quot;;
+background-color: rgba(71, 60, 139,255);
+color: rgb(255, 255, 255);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+     </property>
+     <property name="text">
+      <string>IP:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>170</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei</family>
+       <pointsize>14</pointsize>
+       <weight>36</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 14pt &quot;Microsoft YaHei&quot;;
+background-color: rgba(71, 60, 139,255);
+color: rgb(255, 255, 255);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+     </property>
+     <property name="text">
+      <string>ID：</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="IPTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>160</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei</family>
+       <pointsize>12</pointsize>
+       <weight>36</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 12pt &quot;Microsoft YaHei&quot;;
+color: rgb(0, 255, 255);</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:12pt; font-weight:288; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-weight:400;&quot;&gt;192.168.1.155&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="PORTTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>160</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei</family>
+       <pointsize>12</pointsize>
+       <weight>36</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 12pt &quot;Microsoft YaHei&quot;;
+color: rgb(0, 255, 255);</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:12pt; font-weight:288; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-weight:400;&quot;&gt;8080&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ConnectBtn">
+     <property name="geometry">
+      <rect>
+       <x>1010</x>
+       <y>150</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei</family>
+       <pointsize>20</pointsize>
+       <weight>36</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton{
+	color: rgb(0, 0, 255);
+	font: 290 20pt &quot;Microsoft YaHei&quot;;
+	border-radius:7px;
+	padding:5px;	
+	border:1px solid #484848;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(245, 245,245,  255), stop:1 rgba( 55,200,55, 255));
+}
+QPushButton:hover{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #646464,stop:1 #005200);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>连接</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>170</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei</family>
+       <pointsize>14</pointsize>
+       <weight>36</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 14pt &quot;Microsoft YaHei&quot;;
+background-color: rgba(71, 60, 139,255);
+color: rgb(255, 255, 255);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+     </property>
+     <property name="text">
+      <string>端口：</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="IDTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>160</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei</family>
+       <pointsize>12</pointsize>
+       <weight>36</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 12pt &quot;Microsoft YaHei&quot;;
+color: rgb(0, 255, 255);</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:12pt; font-weight:288; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-weight:400;&quot;&gt;ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditRead">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>230</y>
+       <width>981</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(136, 136, 136);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ClearBtn">
+     <property name="geometry">
+      <rect>
+       <x>940</x>
+       <y>720</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei</family>
+       <pointsize>20</pointsize>
+       <weight>36</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton{
+	color: rgb(0, 0, 255);
+	font: 290 20pt &quot;Microsoft YaHei&quot;;
+	border-radius:7px;
+	padding:5px;	
+	border:1px solid #484848;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(245, 245,245,  255), stop:1 rgba( 55,200,55, 255));
+}
+QPushButton:hover{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #646464,stop:1 #005200);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>清空</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="help_page">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 24pt &quot;Microsoft YaHei&quot;;
+background-color: rgb(71, 60, 139);
+color: rgb(255, 255, 255);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+     </property>
+     <property name="text">
+      <string>智能辅导</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditRec">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>60</y>
+       <width>841</width>
+       <height>441</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditSend">
+     <property name="geometry">
+      <rect>
+       <x>213</x>
+       <y>520</y>
+       <width>641</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 16pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI Light'; font-size:16pt; font-weight:288; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'IBMPlexMono','Courier New','monospace','Consolas','Courier New','monospace'; font-size:9pt; font-weight:600; color:#0451a5;&quot;&gt;玉佩是什么&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnSend">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>520</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);
+font: 290 20pt &quot;Microsoft YaHei&quot;;</string>
+     </property>
+     <property name="text">
+      <string>发送</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnClearRec">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>520</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);
+font: 290 20pt &quot;Microsoft YaHei&quot;;</string>
+     </property>
+     <property name="text">
+      <string>清空接收</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="person_page">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <widget class="QLabel" name="info_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>321</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 24pt &quot;Arial&quot;;
+background-color: rgb(71, 60, 139);
+color: rgb(255, 255, 255);
+border:0px groove gray;
+border-radius:7px;
+padding:2px 4px;</string>
+     </property>
+     <property name="text">
+      <string> 团队成员--个人信息</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="user_label">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>110</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 14pt &quot;Microsoft YaHei&quot;;
+color: rgb(180,255, 200);</string>
+     </property>
+     <property name="text">
+      <string>用户名：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Avatar_label">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>180</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 14pt &quot;Microsoft YaHei&quot;;
+color: rgb(180,255, 200);</string>
+     </property>
+     <property name="text">
+      <string>别名：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="stdNum_label">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>260</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 14pt &quot;Microsoft YaHei&quot;;
+color: rgb(180,255, 200);</string>
+     </property>
+     <property name="text">
+      <string>学号：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="major_label">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>170</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 14pt &quot;Microsoft YaHei&quot;;
+color: rgb(180,255, 200);</string>
+     </property>
+     <property name="text">
+      <string>专业：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="college_label">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>110</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 290 14pt &quot;Microsoft YaHei&quot;;
+color: rgb(180,255, 200);</string>
+     </property>
+     <property name="text">
+      <string>学院：</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnSetInfo">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>380</y>
+       <width>241</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);
+font: 20pt &quot;Arial&quot;;</string>
+     </property>
+     <property name="text">
+      <string>完善个人信息</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comBoxGroupMem">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>301</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);
+font: 87 16pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">qchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

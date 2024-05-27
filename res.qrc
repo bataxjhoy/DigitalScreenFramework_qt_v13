@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/"/>
+    <qresource prefix="/new/prefix1">
+        <file>image/ai.png</file>
+        <file>image/avatar.png</file>
+        <file>image/login_image.jpg</file>
+        <file>image/fontawesome-webfont.ttf</file>
+        <file>image/main_person.png</file>
+        <file>image/main_about.png</file>
+        <file>image/main_company.png</file>
+        <file>image/main_config.png</file>
+        <file>image/main_data.png</file>
+        <file>image/main_exit.png</file>
+        <file>image/main_help.png</file>
+        <file>image/main_main.png</file>
+        <file>image/bg.jpg</file>
+        <file>image/bg1.jpg</file>
+        <file>image/Button_deng.png</file>
+        <file>image/AI1.png</file>
+        <file>image/AI2.png</file>
+        <file>image/bg2.png</file>
+        <file>image/welcome.png</file>
+        <file>image/AI3.png</file>
+        <file>image/board.png</file>
+        <file>image/grayLed.png</file>
+        <file>image/redLed.png</file>
+        <file>image/task.png</file>
+        <file>image/digitPerson.gif</file>
+    </qresource>
+</RCC>
